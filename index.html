@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <title>cozastore</title>
+</head>
+<body>
+     <header >
+         <div class="nav-box">
+           <nav>
+              <img src="https://preview.colorlib.com/theme/cozastore/images/icons/logo-02.png" alt="">       
+               <ul> 
+                <li> <a href="" class="drop-down"> Home</a>
+                    <ul class=" dropdownmenu">
+                        <li><a class="dropdownitem" href="#">HomePage1</a></li>
+                        <li><a class="dropdownitem" href="#">HomePage2</a></li>
+                        <li><a class="dropdownitem" href="#">HomePage3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+               </ul>
+           </nav>
+           <div class="nav-icons">
+              <div class="shopping-icon">
+                 <i class="fas fa-shopping-cart" onclick="openside()"></i>
+              </div>
+              <div class="menu-icon">
+                  <i class="fas fa-bars" onclick="openNav()"></i>
+              </div>
+           </div>
+          </div>
+
+
+          <div id="mysidenav" class="sidenav">
+             <div class="sidenav-content">
+            <a href="javascript:void(0)" class="closebtn1" onclick="closeside()">&times;</a>
+             <h5>YOUR CART</h5>
+             <div class="sidenav-img" >
+                 <img src="assets/images/item-cart-01.jpg" alt="">
+                 <div class="sidenav-img-info">
+                 <a href="">White Shirt Pleat </a> <br>
+                 <span>1 x $19.00</span>
+                 </div>
+             </div>
+             <div class="sidenav-img" >
+                <img src="assets/images/item-cart-02.jpg" alt="">
+                <div class="sidenav-img-info">
+                <a href="">White Shirt Pleat </a>
+                <p>1 x $39.00</p>
+               </div>
+            </div>
+            <div class="sidenav-img" >
+                <img src="assets/images/item-cart-03.jpg" alt="">
+                <div class="sidenav-img-info">
+                <a href="">White Shirt Pleat </a>
+                <p>1 x $17.00</p>
+               </div>
+            </div>
+            <h6>Total: $75.00</h6>
+         </div>
+          <div class="sidenav-btns">
+              <button>View Cart</button>
+              <button>Check Out</button>
+          </div>
+        </div>
+
+
+          <div id="mySidenav-menu" class="sidenav-menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">My Account</a>
+            <a href="#">Track Oder</a>
+            <a href="#">Refunds</a>
+            <a href="#">Help & FAQs</a>
+            <h5>@ CozaStore</h5>
+            <div class="items">
+              <img src="assets/images/gallery-01.jpg" alt="">
+              <img src="assets/images/gallery-02.jpg" alt="">
+              <img src="assets/images/gallery-03.jpg" alt="">
+              <img src="assets/images/gallery-04.jpg" alt="">
+              <img src="assets/images/gallery-05.jpg" alt="">
+              <img src="assets/images/gallery-06.jpg" alt="">
+              <img src="assets/images/gallery-07.jpg" alt="">
+              <img src="assets/images/gallery-08.jpg" alt="">
+              <img src="assets/images/gallery-09.jpg" alt="">
+            </div>
+            <div class="aboutus" >
+             <h4>About Us</h4>
+             <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Curabitur <br> maximus vulputate hendrerit. <br> Praesent faucibus erat vitae rutrum <br> gravida. Vestibulum tempus mi enim, <br> in molestie sem fermentum quis.</p>
+            </div>
+            </div>
+
+     </header>
+
+
+    <script src="plugins/main.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
