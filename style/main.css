@@ -1,45 +1,54 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     font-family: Arial, sans-serif;
 }
-header{
-    background-color:black;
+
+header {
+    background-color: black;
     height: 500px;
 }
-nav{
+
+nav {
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 20px 0px;
 }
-.nav-box{
+
+.nav-box {
     width: 100%;
     display: inline-flex;
-    border-bottom: 1px solid rgb(255,255,255,.1);
+    border-bottom: 1px solid rgb(255, 255, 255, .1);
 }
-ul{
+
+ul {
     display: inline-flex;
     list-style: none;
     padding-top: 15px;
     padding-right: 100px;
 }
 
-ul li a{
+ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding-left: 30px;
     font-size: 14px;
     font-weight: 500;
 }
-ul li a:hover{
-    color:#717fe0;
+
+ul li a:hover {
+    color: #717fe0;
 }
+
+
 /*dropdown*/
-.drop-down{
+
+.drop-down {
     position: relative;
 }
-.dropdownmenu{
-   position: absolute;
+
+.dropdownmenu {
+    position: absolute;
     display: none;
     width: 180px;
     height: 120px;
@@ -48,153 +57,179 @@ ul li a:hover{
     background-color: #fff;
     z-index: 1;
 }
-.dropdownmenu li{
+
+.dropdownmenu li {
     margin-top: 10px;
 }
-.dropdownitem{
-   display: block;
-    color:#555;
+
+.dropdownitem {
+    display: block;
+    color: #555;
     font-size: 16px;
     font-weight: 400;
 }
-.drop-down:hover .dropdownmenu{ display: block;}
 
-.fas{
+.drop-down:hover .dropdownmenu {
+    display: block;
+}
+
+.fas {
     color: #fff;
     font-size: 20px;
     cursor: pointer;
 }
-.fas:hover{
-    color:#717fe0 ;
+
+.fas:hover {
+    color: #717fe0;
 }
-.nav-icons{
+
+.nav-icons {
     display: inline-flex;
     float: right;
 }
-.shopping-icon{
-    padding: 40px 40px 10px 40px;
-    border-right: 1px solid rgb(255,255,255,.1) ;
-}
-.menu-icon{
-    padding: 40px 30px 10px 40px; 
 
+.shopping-icon {
+    padding: 40px 40px 10px 40px;
+    border-right: 1px solid rgb(255, 255, 255, .1);
 }
+
+.menu-icon {
+    padding: 40px 30px 10px 40px;
+}
+
+
 /*sidebar*/
-.sidenav{
+
+.sidenav {
     height: 100%;
-    width: 0;
+    width: 400px;
     position: fixed;
     background-color: #fff;
     top: 0;
-    right: 0;
+    right: -400px;
     z-index: 1;
     overflow-x: hidden;
     transition: 0.4s;
-    padding-top: 50px ;
-} 
-.sidenav a{
+    padding-top: 50px;
+}
+
+.sidenav a {
     text-decoration: none;
     font-size: 15px;
     color: #333;
 }
-.sidenav-content{
+
+.sidenav-content {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-  
 }
+
 .sidenav .closebtn1 {
-    position: absolute; 
+    position: absolute;
     font-size: 36px;
     right: 85px;
     margin-left: 50px;
     top: 30px;
-  }
-.sidenav-img{
+}
+
+.sidenav-img {
     display: flex;
     padding-top: 20px;
 }
-.sidenav-img-info{
-    display:block;
+
+.sidenav-img-info {
+    display: block;
     margin-left: 15px;
     color: #555;
 }
-.sidenav-content h6{
+
+.sidenav-content h6 {
     padding-top: 160px;
     font-size: 18px;
 }
-.sidenav-btns{
+
+.sidenav-btns {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
 }
-.sidenav-btns button{
+
+.sidenav-btns button {
     width: 130px;
     height: 40px;
     background-color: #333;
     color: white;
     border: none;
     border-radius: 40px;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
-.sidenav-btns button:hover{
-     background-color: #717fe0;
+
+.sidenav-btns button:hover {
+    background-color: #717fe0;
 }
+
+
 /*sidebermenu*/
-.sidenav-menu{
+
+.sidenav-menu {
     height: 100%;
-    width: 0;
+    width: 400px;
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
+    right: -400px;
     background-color: #fff;
     overflow-x: hidden;
     transition: 0.4s;
-    padding-tOP: 50px ;
-  }
-  
-  .sidenav-menu a {
+    padding-tOP: 50px;
+}
+
+.sidenav-menu a {
     padding: 8px 8px 8px 65px;
     text-decoration: none;
     font-size: 15px;
     color: #333;
     display: block;
-  }
-  
-  .sidenav-menu a:hover {
+}
+
+.sidenav-menu a:hover {
     color: #717fe0;
-  }
-  
- .sidenav-menu .closebtn {
-    position: absolute; 
+}
+
+.sidenav-menu .closebtn {
+    position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
- .sidenav-menu h5{
-       padding: 40px 0px 0px 65px;
- } 
-  .items{
+}
+
+.sidenav-menu h5 {
+    padding: 40px 0px 0px 65px;
+}
+
+.items {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 0px ;
-  }
-  .items img{
+    padding: 30px 0px;
+}
+
+.items img {
     width: 30%;
     margin-bottom: 10px;
-   margin-left:5px ;
-  }
- .aboutus{
-     width: 70%;
-     margin-left: auto;
-     margin-right: auto;
- }
- .aboutus p{
-     color: #888;
-    padding-top: 20px;
- } 
+    margin-left: 5px;
+}
 
+.aboutus {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutus p {
+    color: #888;
+    padding-top: 20px;
+}
