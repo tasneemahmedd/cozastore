@@ -9,7 +9,7 @@ header{
 }
 nav{
     width: 80%;
-    margin:0PX auto;
+    margin:0 auto;
     padding: 20px 0px;
 }
 .nav-box{
@@ -90,7 +90,7 @@ ul li a:hover{
     z-index: 1;
     overflow-x: hidden;
     transition: 0.4s;
-    padding-tOP: 50px ;
+    padding-top: 50px ;
 } 
 .sidenav a{
     text-decoration: none;
