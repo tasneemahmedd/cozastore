@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, sans-serif;
+    font-family: "Arial , sans-serif";
 }
 
 .carousel-caption{
@@ -11,14 +11,12 @@ color: white;
 }
 .carousel-caption p{
     color: white;
-    font-family: PlayfairDisplay-Regular;
     font-size: 28px;
     line-height: 1.2857;
 }
 .carousel-caption h1{
     color: white;
     font-size: 60px;
-    font-family: Poppins-Bold;
     line-height: 1.1;
 }
 .carousel-caption button{
@@ -302,3 +300,33 @@ ul li a:hover {
     color: #888;
     padding-top: 20px;
 }
+
+
+/*
+  .carousel-item{
+    position: relative;
+}
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+   background-color:#000; 
+    opacity: 0.5;
+    }
+   */
+   .carousel-control-prev-icon , 
+    .carousel-control-next-icon  {
+       background-image: none;
+   }
+   .carousel-control-prev ,.carousel-control-next{
+    text-decoration: none;
+
+   }
+   .carousel-control-next .fas ,.carousel-control-prev .fas{
+   font-size: 60px;
+   }
