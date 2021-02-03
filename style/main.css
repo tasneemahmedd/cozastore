@@ -1,24 +1,165 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
 }
 
-header {
-    background-color: black;
-    height: 500px;
+.carousel-item {
+    display: block;
+    position: relative;
 }
+
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #0a53be;
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: relative;
+    top: 250px;
+    height: 300px;
+    color: white;
+    z-index: 2;
+}
+
+.carousel-caption p {
+    color: white;
+    font-size: 28px;
+    line-height: 1.2857;
+}
+
+.carousel-caption h1 {
+    color: white;
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.carousel-caption button {
+    width: 170px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #717fe0;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.carousel-caption button:hover {
+    color: #717fe0;
+    background-color: #fff;
+}
+
+
+/*carousel*/
+
+.carousel-control-next,
+.carousel-control-prev {
+    margin-top: 350px;
+    height: 100px;
+}
+
+
+/*
+  .carousel-item{
+    position: relative;
+}
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+   background-color:#000; 
+    opacity: 0.5;
+    }
+   */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    text-decoration: none;
+}
+
+.carousel-control-next .fas,
+.carousel-control-prev .fas {
+    font-size: 60px;
+}
+
+
+/*indicators*/
+
+.carousel-indicators {
+    height: 100px;
+    margin-bottom: 80px;
+}
+
+.carousel-dark .carousel-indicators li {
+    height: 100%;
+    width: 190px;
+    text-indent: 0;
+    opacity: 1;
+}
+
+.carousel-indicators .active .indicators-img {
+    opacity: .5;
+}
+
+.carousel-dark .carousel-indicators li span {
+    position: absolute;
+    display: flex;
+    color: white;
+    top: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    opacity: 0;
+}
+
+.carousel-indicators .active .indicators-type {
+    opacity: 1;
+}
+
+.carousel-dark .carousel-indicators li:hover .indicators-img {
+    opacity: .5;
+}
+
+.carousel-dark .carousel-indicators li:hover .indicators-type {
+    opacity: 1;
+}
+
+
+/*navigation*/
 
 nav {
+    position: relative;
     width: 80%;
     margin: 0 auto;
-    padding: 20px 0px;
+    padding: 20px 0;
+    z-index: 1;
 }
 
 .nav-box {
     width: 100%;
+    top: 0;
+    position: absolute;
     display: inline-flex;
-    border-bottom: 1px solid rgb(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
 ul {
@@ -53,7 +194,7 @@ ul li a:hover {
     width: 180px;
     height: 120px;
     left: 256px;
-    padding: 0px;
+    padding: 0;
     background-color: #fff;
     z-index: 1;
 }
@@ -84,13 +225,15 @@ ul li a:hover {
 }
 
 .nav-icons {
+    position: relative;
     display: inline-flex;
     float: right;
+    z-index: 1;
 }
 
 .shopping-icon {
     padding: 40px 40px 10px 40px;
-    border-right: 1px solid rgb(255, 255, 255, .1);
+    border-right: 1px solid rgba(255, 255, 255, .1);
 }
 
 .menu-icon {
@@ -207,14 +350,14 @@ ul li a:hover {
 }
 
 .sidenav-menu h5 {
-    padding: 40px 0px 0px 65px;
+    padding: 40px 0 0 65px;
 }
 
 .items {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 0px;
+    padding: 30px 0;
 }
 
 .items img {
@@ -232,4 +375,185 @@ ul li a:hover {
 .aboutus p {
     color: #888;
     padding-top: 20px;
+}
+
+
+/*animatiiiiiiiiiiiiiiiiiiiiiiion*/
+
+
+/*carousel caption 1*/
+
+#carousel-caption1 p {
+    animation: fadeInDown 1s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#carousel-caption1 h1 {
+    opacity: 0;
+    animation: fadeInUp 1s;
+    animation-delay: .7s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#carousel-caption1 button {
+    opacity: 0;
+    animation: zoomIn 1s;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*carousel caption 2*/
+
+#carousel-caption2 p {
+    animation: rotateInDownLeft 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateInDownLeft {
+    from {
+        transform-origin: left bottom;
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+    to {
+        transform-origin: left bottom;
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+#carousel-caption2 h1 {
+    animation: bounceInRight 2s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-delay: .3s;
+}
+
+@keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#carousel-caption2 button {
+    opacity: 0;
+    animation: fadeInUp 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*carousel caption 3*/
+
+#carousel-caption3 p {
+    animation: rotateInDownLeft 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateInDownLeft {
+    0% {
+        transform-origin: left bottom;
+        transform: rotate(-10deg);
+        opacity: 0;
+    }
+    100% {
+        transform-origin: left bottom;
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+#carousel-caption3 h1 {
+    opacity: 0;
+    animation: rotateInUpRight .6s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateInUpRight {
+    from {
+        transform-origin: right bottom;
+        transform: rotate(-20deg);
+        opacity: 0;
+    }
+    to {
+        transform-origin: right bottom;
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+#carousel-caption3 button {
+    opacity: 0;
+    animation: rotate 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-200deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
 }
