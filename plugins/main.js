@@ -12,3 +12,4 @@ function openNav() {
   function closeNav() {
     document.getElementById("mySidenav-menu").style.right = "-400px";
   }
+  
